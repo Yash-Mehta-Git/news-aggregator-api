@@ -10,7 +10,7 @@ function readUsers() {
 
 function writeUsers(user) {
   const data = JSON.stringify(user);
-  return fs.writeFileSync(usersFile, data,{encoding: 'utf8',flag: 'w'});
+  return fs.writeFileSync(usersFile, data);
 }
 
 module.exports = { readUsers, writeUsers };
